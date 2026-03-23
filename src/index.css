@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: 'Manrope', system-ui, sans-serif;
   scroll-behavior: smooth;
 }
@@ -14,9 +14,10 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(34, 168, 132, 0.08), transparent 30%),
-    linear-gradient(180deg, #f8fafc 0%, #f8fafc 100%);
-  color: #0f172a;
+    radial-gradient(circle at top, rgba(39, 125, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.12), transparent 24%),
+    linear-gradient(180deg, #030712 0%, #081120 100%);
+  color: #e5eefb;
 }
 
 * {
@@ -34,6 +35,6 @@ img {
 }
 
 ::selection {
-  background: rgba(34, 168, 132, 0.18);
-  color: #0f172a;
+  background: rgba(79, 160, 255, 0.3);
+  color: #f8fbff;
 }

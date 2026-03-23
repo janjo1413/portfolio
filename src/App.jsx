@@ -65,6 +65,7 @@ const projects = [
       'Combined web, mobile, real-time session control, voice-assisted quiz generation, and gamification into a single AWS-hosted product for classroom engagement.',
     role: 'Full Stack Developer across web, mobile, backend, and integrations.',
     repo: 'https://github.com/janjo1413',
+    cta: 'View GitHub Profile',
   },
   {
     title: 'Legal Calculation System',
@@ -76,6 +77,7 @@ const projects = [
       'Automated spreadsheet-driven workflows, preserved calculation history, and reduced manual validation effort with API-backed SELIC checks and monthly update logic.',
     role: 'Full Stack Developer delivering the frontend, backend, spreadsheet integration, and persistence layer.',
     repo: 'https://github.com/janjo1413/SelicCalculatorMVP',
+    cta: 'View Repository',
   },
   {
     title: 'Client Portfolio Website',
@@ -87,6 +89,7 @@ const projects = [
       'Delivered a professional and maintainable web presence focused on clarity, mobile usability, and a refined visual identity.',
     role: 'Frontend-focused development and implementation for a client-facing website.',
     repo: 'https://github.com/DudaGomes/bona-mama-website',
+    cta: 'View Repository',
   },
 ];
 
@@ -114,14 +117,14 @@ const contactLinks = [
 ];
 
 const sectionTitleClass =
-  'text-sm font-semibold uppercase tracking-[0.28em] text-brand-700';
+  'text-sm font-semibold uppercase tracking-[0.28em] text-brand-300';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-white/60 bg-slate-50/85 backdrop-blur-xl">
+    <div className="min-h-screen bg-midnight-950 text-slate-100">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-midnight-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="#home" className="text-sm font-extrabold uppercase tracking-[0.3em] text-slate-900">
+          <a href="#home" className="text-sm font-extrabold uppercase tracking-[0.3em] text-white">
             JGMQ
           </a>
           <nav aria-label="Primary navigation" className="hidden gap-6 md:flex">
@@ -129,7 +132,7 @@ function App() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-slate-600 transition hover:text-brand-700"
+                className="text-sm font-medium text-slate-300 transition hover:text-brand-300"
               >
                 {item.label}
               </a>
@@ -142,14 +145,14 @@ function App() {
         <section id="home" className="relative overflow-hidden bg-hero-glow">
           <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
             <div className="flex flex-col justify-center">
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-brand-700">
-                Full Stack Developer | Teresina, Piau\u00ed, Brazil
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-brand-300">
+                Full Stack Developer | Teresina, Piauí, Brazil
               </p>
-              <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight text-slate-950 sm:text-6xl">
+              <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight text-white sm:text-6xl">
                 Building reliable digital products across web, mobile, backend, and AI integrations.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                I am Jo\u00e3o Gabriel Miranda Queiroz, a Computer Science student at UFPI in the 6th
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                I am João Gabriel Miranda Queiroz, a Computer Science student at UFPI in the 6th
                 semester, fluent in English, with research and freelance experience focused on
                 turning complex problems into practical software solutions.
               </p>
@@ -158,7 +161,7 @@ function App() {
                   href="https://github.com/janjo1413"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  className="inline-flex items-center justify-center rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-400"
                 >
                   View GitHub
                 </a>
@@ -166,52 +169,52 @@ function App() {
                   href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-miranda-queiroz-9319132a0/?skipRedirect=true"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-brand-400 hover:text-brand-700"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-brand-400 hover:bg-brand-500/10 hover:text-brand-200"
                 >
                   Connect on LinkedIn
                 </a>
               </div>
-              <div className="mt-8 inline-flex w-fit items-center rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800 shadow-card">
+              <div className="mt-8 inline-flex w-fit items-center rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-2 text-sm font-semibold text-brand-200 shadow-card">
                 Open to internship opportunities in Full Stack, Frontend, Backend, and Mobile Development
               </div>
             </div>
 
             <div className="relative flex items-center justify-center">
-              <div className="absolute inset-6 rounded-[2rem] bg-brand-100/50 blur-3xl" aria-hidden="true" />
-              <article className="relative w-full max-w-md rounded-[2rem] border border-white/70 bg-white/90 p-6 shadow-soft backdrop-blur">
+              <div className="absolute inset-6 rounded-[2rem] bg-brand-500/20 blur-3xl" aria-hidden="true" />
+              <article className="relative w-full max-w-md rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-soft backdrop-blur">
                 <div className="flex items-center gap-5">
                   <img
                     src="https://avatars.githubusercontent.com/u/163935732?s=400&u=f74d8a69ccd90979a57b81acaf22717c026fafdc&v=4"
-                    alt="Portrait of Jo\u00e3o Gabriel Miranda Queiroz"
-                    className="h-24 w-24 rounded-3xl object-cover ring-4 ring-brand-100"
+                    alt="Portrait of João Gabriel Miranda Queiroz"
+                    className="h-24 w-24 rounded-3xl object-cover ring-4 ring-brand-400/20"
                   />
                   <div>
-                    <p className="text-2xl font-extrabold text-slate-950">
-                      Jo\u00e3o Gabriel Miranda Queiroz
+                    <p className="text-2xl font-extrabold text-white">
+                      João Gabriel Miranda Queiroz
                     </p>
-                    <p className="mt-1 text-sm font-medium text-slate-500">Computer Science | UFPI</p>
-                    <p className="mt-3 text-sm font-semibold text-brand-700">
+                    <p className="mt-1 text-sm font-medium text-slate-400">Computer Science | UFPI</p>
+                    <p className="mt-3 text-sm font-semibold text-brand-300">
                       Fluent English | Research + Product Engineering
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Focus</p>
-                    <p className="mt-2 text-sm font-semibold text-slate-900">Full Stack Development</p>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Focus</p>
+                    <p className="mt-2 text-sm font-semibold text-white">Full Stack Development</p>
                   </div>
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Research</p>
-                    <p className="mt-2 text-sm font-semibold text-slate-900">3 Scientific Projects</p>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Research</p>
+                    <p className="mt-2 text-sm font-semibold text-white">3 Scientific Projects</p>
                   </div>
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Delivery</p>
-                    <p className="mt-2 text-sm font-semibold text-slate-900">Web, Mobile, Backend, AI</p>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Delivery</p>
+                    <p className="mt-2 text-sm font-semibold text-white">Web, Mobile, Backend, AI</p>
                   </div>
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Experience</p>
-                    <p className="mt-2 text-sm font-semibold text-slate-900">Freelance + Research</p>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Experience</p>
+                    <p className="mt-2 text-sm font-semibold text-white">Freelance + Research</p>
                   </div>
                 </div>
               </article>
@@ -223,11 +226,11 @@ function App() {
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
               <p className={sectionTitleClass}>About</p>
-              <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 Research discipline paired with practical engineering execution.
               </h2>
             </div>
-            <div className="space-y-6 text-lg leading-8 text-slate-600">
+            <div className="space-y-6 text-lg leading-8 text-slate-300">
               <p>
                 I combine scientific research, software engineering, and strong problem-solving to
                 design products that are technically solid and useful in real scenarios. My work
@@ -245,13 +248,13 @@ function App() {
         </section>
 
         <section id="skills" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-card sm:p-10">
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-card backdrop-blur sm:p-10">
             <p className={sectionTitleClass}>Skills</p>
             <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 Technologies I use to ship end-to-end products.
               </h2>
-              <p className="max-w-xl text-base leading-7 text-slate-600">
+              <p className="max-w-xl text-base leading-7 text-slate-300">
                 Balanced across interfaces, APIs, infrastructure, data storage, real-time systems,
                 and AI-enabled product features.
               </p>
@@ -260,7 +263,7 @@ function App() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800"
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-brand-400 hover:bg-brand-500/10 hover:text-brand-200"
                 >
                   {skill}
                 </span>
@@ -272,7 +275,7 @@ function App() {
         <section id="experience" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="flex flex-col gap-4">
             <p className={sectionTitleClass}>Experience</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
               Research and development work grounded in measurable outcomes.
             </h2>
           </div>
@@ -280,20 +283,20 @@ function App() {
             {experience.map((item) => (
               <article
                 key={`${item.title}-${item.period}`}
-                className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-card transition hover:-translate-y-1"
+                className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-card transition hover:-translate-y-1"
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
-                    <p className="mt-1 text-sm font-semibold uppercase tracking-[0.2em] text-brand-700">
+                    <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                    <p className="mt-1 text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
                       {item.organization}
                     </p>
                   </div>
-                  <p className="rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600">
+                  <p className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-300">
                     {item.period}
                   </p>
                 </div>
-                <p className="mt-4 text-base leading-7 text-slate-600">{item.description}</p>
+                <p className="mt-4 text-base leading-7 text-slate-300">{item.description}</p>
               </article>
             ))}
           </div>
@@ -302,7 +305,7 @@ function App() {
         <section id="projects" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="flex flex-col gap-4">
             <p className={sectionTitleClass}>Featured Projects</p>
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
               Selected work with EngajEdu as the flagship product.
             </h2>
           </div>
@@ -313,8 +316,8 @@ function App() {
                 key={project.title}
                 className={`overflow-hidden rounded-[2rem] border ${
                   project.featured
-                    ? 'border-brand-200 bg-slate-950 text-white shadow-soft'
-                    : 'border-slate-200 bg-white text-slate-900 shadow-card'
+                    ? 'border-brand-400/40 bg-gradient-to-br from-brand-600/20 via-midnight-850 to-midnight-900 text-white shadow-soft'
+                    : 'border-white/10 bg-white/5 text-white shadow-card'
                 }`}
               >
                 <div className="grid gap-8 p-8 lg:grid-cols-[1.15fr_0.85fr] lg:p-10">
@@ -329,14 +332,14 @@ function App() {
                     </div>
                     <p
                       className={`mt-5 text-lg leading-8 ${
-                        project.featured ? 'text-slate-300' : 'text-slate-600'
+                        project.featured ? 'text-slate-200' : 'text-slate-300'
                       }`}
                     >
                       {project.description}
                     </p>
                     <p
                       className={`mt-5 text-base leading-7 ${
-                        project.featured ? 'text-slate-300' : 'text-slate-600'
+                        project.featured ? 'text-slate-200' : 'text-slate-300'
                       }`}
                     >
                       <span className="font-semibold text-current">Role:</span> {project.role}
@@ -347,7 +350,7 @@ function App() {
                     <div>
                       <p
                         className={`text-xs font-semibold uppercase tracking-[0.2em] ${
-                          project.featured ? 'text-brand-100' : 'text-slate-500'
+                          project.featured ? 'text-brand-100' : 'text-slate-400'
                         }`}
                       >
                         Stack
@@ -359,7 +362,7 @@ function App() {
                             className={`rounded-full px-3 py-1 text-sm font-semibold ${
                               project.featured
                                 ? 'bg-white/10 text-white'
-                                : 'border border-slate-200 bg-slate-50 text-slate-700'
+                                : 'border border-white/10 bg-white/5 text-slate-200'
                             }`}
                           >
                             {item}
@@ -371,14 +374,14 @@ function App() {
                     <div>
                       <p
                         className={`text-xs font-semibold uppercase tracking-[0.2em] ${
-                          project.featured ? 'text-brand-100' : 'text-slate-500'
+                          project.featured ? 'text-brand-100' : 'text-slate-400'
                         }`}
                       >
                         Impact
                       </p>
                       <p
-                        className={`mt-3 text-base leading-7 ${
-                          project.featured ? 'text-slate-300' : 'text-slate-600'
+                      className={`mt-3 text-base leading-7 ${
+                          project.featured ? 'text-slate-200' : 'text-slate-300'
                         }`}
                       >
                         {project.impact}
@@ -392,10 +395,10 @@ function App() {
                       className={`inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition ${
                         project.featured
                           ? 'bg-white text-slate-950 hover:bg-brand-50'
-                          : 'bg-slate-950 text-white hover:bg-slate-800'
+                          : 'bg-brand-500 text-white hover:bg-brand-400'
                       }`}
                     >
-                      View Repository
+                      {project.cta}
                     </a>
                   </div>
                 </div>
@@ -405,14 +408,14 @@ function App() {
         </section>
 
         <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-card sm:p-10">
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-card backdrop-blur sm:p-10">
             <p className={sectionTitleClass}>Contact</p>
             <div className="mt-4 grid gap-10 lg:grid-cols-[1fr_0.95fr]">
               <div>
-                <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                   Let&apos;s talk about internship roles, product ideas, or collaboration.
                 </h2>
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
                   I am actively looking for internship opportunities in software engineering and
                   open to conversations with recruiters, research groups, and teams building modern
                   digital products.
@@ -426,12 +429,12 @@ function App() {
                     href={item.href}
                     target={item.href.startsWith('http') ? '_blank' : undefined}
                     rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 transition hover:border-brand-300 hover:bg-brand-50"
+                    className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 transition hover:border-brand-400 hover:bg-brand-500/10"
                   >
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
                       {item.label}
                     </p>
-                    <p className="mt-2 text-sm font-semibold text-slate-900">{item.value}</p>
+                    <p className="mt-2 text-sm font-semibold text-white">{item.value}</p>
                   </a>
                 ))}
               </div>

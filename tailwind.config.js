@@ -4,29 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        slate: {
-          950: '#050816',
+        midnight: {
+          950: '#030712',
+          900: '#081120',
+          850: '#0d1728',
+          800: '#111c31',
         },
         brand: {
-          50: '#effcf8',
-          100: '#d6f6ec',
-          200: '#afead7',
-          300: '#7fd9be',
-          400: '#43c19f',
-          500: '#22a884',
-          600: '#17876b',
-          700: '#156c58',
-          800: '#155647',
-          900: '#15483d',
+          50: '#edf6ff',
+          100: '#d7ebff',
+          200: '#b7dbff',
+          300: '#86c2ff',
+          400: '#4fa0ff',
+          500: '#277dff',
+          600: '#155ee6',
+          700: '#144dca',
+          800: '#1741a4',
+          900: '#193985',
         },
       },
       boxShadow: {
-        soft: '0 20px 60px rgba(15, 23, 42, 0.12)',
-        card: '0 12px 30px rgba(15, 23, 42, 0.08)',
+        soft: '0 25px 80px rgba(2, 6, 23, 0.45)',
+        card: '0 16px 40px rgba(2, 6, 23, 0.32)',
       },
       backgroundImage: {
         'hero-glow':
-          'radial-gradient(circle at top left, rgba(34, 168, 132, 0.22), transparent 35%), radial-gradient(circle at top right, rgba(148, 163, 184, 0.18), transparent 28%), linear-gradient(135deg, rgba(248, 250, 252, 0.98), rgba(241, 245, 249, 0.95))',
+          'radial-gradient(circle at top left, rgba(39, 125, 255, 0.34), transparent 35%), radial-gradient(circle at top right, rgba(56, 189, 248, 0.2), transparent 26%), linear-gradient(135deg, rgba(3, 7, 18, 0.98), rgba(13, 23, 40, 0.98))',
       },
       fontFamily: {
         sans: ['Manrope', 'system-ui', 'sans-serif'],
