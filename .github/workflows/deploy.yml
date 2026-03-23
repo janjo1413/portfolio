@@ -1,4 +1,5 @@
 name: Deploy Portfolio to GitHub Pages
+# Triggered after Pages enablement
 
 on:
   push:
